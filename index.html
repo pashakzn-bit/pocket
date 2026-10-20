@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#153c2e">
 <meta name="description" content="Pocket AI — a simple personal money tracker and savings coach.">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Pocket AI — Your money, made easier</title>
+<title>Pocket — Money made simple</title>
 <style>
 :root{color-scheme:light;--ink:#17251e;--muted:#6b7b72;--bg:#f5f7f4;--card:#fff;--line:#e1e8e2;--green:#176344;--mint:#e1f6e9;--shadow:0 10px 28px #183b2810}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -15,30 +15,36 @@ button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,inpu
 .hero{background:linear-gradient(125deg,#143c2e,#246a4d);color:white;padding:24px;border-radius:22px;box-shadow:var(--shadow)}.eyebrow{font-size:11px;letter-spacing:1.4px;color:#c3e6d2;font-weight:700}.balance{font-size:clamp(34px,7vw,48px);font-weight:800;letter-spacing:-1.8px;margin:6px 0}.hero p{margin:0;color:#d4ebdc;font-size:13px}.hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:19px}
 .btn{border:0;border-radius:11px;padding:11px 15px;background:var(--green);color:white;font-weight:700}.btn-light{background:#e6ffef;color:#16432e}.btn-ghost{background:transparent;color:white;border:1px solid #75a18a}.btn-outline{background:white;color:var(--ink);border:1px solid var(--line)}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:var(--shadow);min-width:0}.stat-label{color:var(--muted);font-size:13px}.stat-value{font-size:clamp(24px,4vw,31px);font-weight:800;letter-spacing:-.9px;margin-top:7px}.nav{display:flex;gap:5px;overflow-x:auto;padding:4px 0;margin:20px 0 14px}.nav button{white-space:nowrap;border:0;background:transparent;color:var(--muted);border-radius:10px;padding:10px 12px}.nav button.active{background:var(--mint);color:#164e35;font-weight:750}.view{display:none}.view.active{display:block}.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.card-title{font-weight:800;font-size:16px}.muted{color:var(--muted)}.small{font-size:12px}.tx{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.tx:last-child{border-bottom:0}.tx-icon{height:39px;width:39px;display:grid;place-items:center;border-radius:12px;background:#f0f5f1;flex-shrink:0;font-size:18px}.tx-main{min-width:0;flex:1}.tx-name{font-weight:700;overflow-wrap:anywhere}.tx-type{font-size:12px;color:var(--muted);margin-top:2px}.tx-amount{font-weight:750;white-space:nowrap}.income{color:#16824f}.bar{height:8px;background:#e6ece7;border-radius:20px;overflow:hidden;margin:13px 0}.bar-fill{height:100%;background:#2b9b66;border-radius:20px;transition:width .2s}.field{display:block;width:100%;padding:11px 12px;border:1px solid #d6e0d8;border-radius:10px;background:white;color:var(--ink);margin-top:5px}.field-label{display:block;font-size:13px;font-weight:650;margin-top:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.message{border-radius:12px;background:#f0f6f1;padding:12px;font-size:14px;line-height:1.6;white-space:pre-wrap}.chat-log{display:flex;flex-direction:column;gap:10px;margin:15px 0}.chat-user{align-self:flex-end;max-width:90%;background:#e1f6e9;border-radius:13px 13px 3px 13px;padding:11px 13px;white-space:pre-wrap}.chat-ai{align-self:flex-start;max-width:95%;background:#f0f4f0;border-radius:13px 13px 13px 3px;padding:11px 13px;white-space:pre-wrap}.prompt-row{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.prompt{border:1px solid var(--line);border-radius:99px;background:white;padding:8px 11px;font-size:12px;color:var(--ink)}.footer{font-size:11px;color:var(--muted);line-height:1.55;margin:22px 2px}.empty{padding:24px 5px;text-align:center;color:var(--muted);font-size:13px}
 @media(max-width:620px){.app{padding:15px 13px 35px}.columns{grid-template-columns:1fr}.hero{padding:21px}.card{padding:15px}.stats{gap:9px}.stat-value{font-size:25px}.form-grid{grid-template-columns:1fr 1fr}}
+
+/* Pocket v2: clearer hierarchy and friendly mobile layout */
+:root{--bg:#f7f9f6;--ink:#183227;--green:#176747;--muted:#607469}
+.app{max-width:950px}.top{margin-bottom:17px}.hero{background:linear-gradient(135deg,#113c2c,#1e7850);padding:30px;border-radius:24px}.hero .balance{font-size:clamp(39px,8vw,58px)}.hero p{font-size:14px}.eyebrow{font-size:12px}.card{box-shadow:0 3px 16px #183b2809;border-radius:19px}.nav{background:#fff;border:1px solid var(--line);border-radius:15px;padding:5px;gap:4px}.nav button{flex:1;text-align:center;font-weight:650}.nav button.active{background:#dff5e7}.btn{min-height:42px}.prompt{font-size:13px;min-height:39px}.card-title{font-size:17px}.footer{max-width:750px}.guide{display:flex;gap:10px;align-items:flex-start;background:#ecf8ef;border:1px solid #d0e9d7;padding:14px 16px;border-radius:15px;margin:0 0 14px}.guide strong{display:block;margin-bottom:3px}.guide p{margin:0;color:#516c5d;font-size:13px}.note{font-size:12px;color:#61796c;margin:10px 0 0}.chat-ai{border:1px solid #e0eae2}.stat-value{font-size:clamp(25px,4vw,32px)}
+@media(max-width:620px){.hero{padding:24px}.nav button{font-size:12px;padding:10px 6px}.hero-actions .btn{flex:1}.stats{gap:9px}.guide{padding:12px}.chat-user,.chat-ai{max-width:100%}#ask-form{flex-wrap:wrap}#ask-form input{flex:1 1 100%}#ask-form button{width:100%}}
 </style>
 </head>
 <body>
 <div class="app">
 <header class="top">
-<div class="logo">↗</div><div><div class="brand">pocket<span style="color:#2b9b66">.</span></div><div class="sub">YOUR PERSONAL MONEY COACH</div></div><span class="demo">LOCAL MVP</span>
+<div class="logo">↗</div><div><div class="brand">pocket<span style="color:#2b9b66">.</span></div><div class="sub">MONEY MADE SIMPLE</div></div><span class="demo">EARLY VERSION</span>
 </header>
 <section class="hero">
-<div class="eyebrow">TRACK YOUR MONEY</div><div class="balance" id="balance">$0.00</div><p>Estimated balance from the transactions you enter.</p>
-<div class="hero-actions"><button class="btn btn-light" id="open-add">＋ Add transaction</button><button class="btn btn-ghost" id="export-data">Export my data</button></div>
+<div class="eyebrow">YOUR TRACKED MONEY</div><div class="balance" id="balance">$0.00</div><p>Income minus expenses you entered. This is not your bank balance.</p>
+<div class="hero-actions"><button class="btn btn-light" id="open-add">＋ Add money in or out</button><button class="btn btn-ghost" id="export-data">Export my data</button></div>
 </section>
 <section class="stats">
-<div class="card"><div class="stat-label">Income tracked</div><div class="stat-value" id="income">$0</div><div class="small muted">All saved income entries</div></div>
-<div class="card"><div class="stat-label">Expenses tracked</div><div class="stat-value" id="spent">$0</div><div class="small muted">All saved expense entries</div></div>
+<div class="card"><div class="stat-label">Money in</div><div class="stat-value" id="income">$0</div><div class="small muted">Income you entered</div></div>
+<div class="card"><div class="stat-label">Money out</div><div class="stat-value" id="spent">$0</div><div class="small muted">Spending you entered</div></div>
 </section>
 <nav class="nav" aria-label="Main navigation">
 <button class="active" data-tab="overview">◫ Overview</button><button data-tab="transactions">↕ Transactions</button><button data-tab="goals">◎ Savings goals</button><button data-tab="coach">✳ Money coach</button>
 </nav>
 <section class="view active" id="overview">
+<div class="guide"><span style="font-size:23px">👋</span><div><strong>Welcome to Pocket</strong><p>1. Add money in or out. &nbsp;2. Set a savings goal. &nbsp;3. Ask your money coach a question.</p></div></div>
 <div class="columns">
 <div class="card"><div class="card-head"><div class="card-title">Recent activity</div><button class="btn btn-outline" data-go="transactions">View all →</button></div><div id="recent"></div></div>
 <div class="card"><div class="card-head"><div class="card-title">Savings goal</div><span>🎯</span></div><div id="home-goal-name" style="font-size:21px;font-weight:800">First $5,000</div><div class="muted small" style="margin-top:5px"><span id="home-saved">$0</span> saved of <span id="home-target">$5,000</span></div><div class="bar"><div class="bar-fill" id="goal-progress" style="width:0%"></div></div><button class="btn btn-outline" data-go="goals">Manage goal →</button></div>
 </div>
-<div class="card" style="margin-top:13px"><div class="card-title">✳ Your money snapshot</div><p id="insight" class="muted" style="line-height:1.65;margin-bottom:0">Add transactions to see your money snapshot.</p></div>
+<div class="card" style="margin-top:13px"><div class="card-title">Your money at a glance</div><p id="insight" class="muted" style="line-height:1.65;margin-bottom:0">Add transactions to see your money snapshot.</p></div>
 </section>
 <section class="view" id="transactions">
 <div class="card"><div class="card-head"><div class="card-title">All transactions</div><button class="btn" id="open-add-2">＋ Add new</button></div><div id="all-tx"></div></div>
@@ -50,10 +56,11 @@ button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,inpu
 <div class="form-actions"><button class="btn" id="save-goal">Save goal</button></div><p id="goal-status" class="muted small" aria-live="polite"></p></div>
 </section>
 <section class="view" id="coach">
-<div class="card"><div class="card-title" style="font-size:19px">✳ Pocket money coach</div><p class="muted small">This first version gives rule-based guidance from your locally saved transactions. It is not a live AI service and does not access your bank.</p>
-<div class="prompt-row"><button class="prompt" data-question="How can I save for my goal?">Help me save</button><button class="prompt" data-question="Where am I spending money?">Analyze expenses</button><button class="prompt" data-question="Make me a budget">Make a budget</button></div>
-<div class="chat-log" id="chat-log"><div class="chat-ai">Hey! I'm Pocket. I can help you review the entries you track here and plan a savings goal. What would you like to work on?</div></div>
+<div class="card"><div class="card-title" style="font-size:19px">Ask Pocket about your money</div><p class="muted small">Ask about spending, saving, or whether a purchase fits your tracked money. Pocket uses your entries and simple calculations—not a live AI service or bank connection.</p>
+<div class="prompt-row"><button class="prompt" data-question="How can I save for my goal?">Help me save</button><button class="prompt" data-question="Where am I spending money?">Analyze expenses</button><button class="prompt" data-question="Make me a budget">Make a budget</button><button class="prompt" data-question="Can I afford to spend $50 today?">Can I spend $50?</button></div>
+<div class="chat-log" id="chat-log"><div class="chat-ai">Hey! 👋 I can help you understand the money you enter here. Try asking: “Can I afford to spend $50?”</div></div>
 <form id="ask-form" style="display:flex;gap:8px"><input class="field" style="margin:0;min-width:0" id="ask-input" maxlength="400" placeholder="Ask about your budget..." required><button class="btn">Send</button></form>
+<p class="note">Pocket only knows what you enter. It cannot see bills, bank accounts, or future income unless you track them.</p>
 </div>
 </section>
 <section id="add-panel" class="card" style="display:none;margin-top:14px">
@@ -64,7 +71,7 @@ button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,inpu
 <div class="form-actions"><button class="btn">Save transaction</button><button class="btn btn-outline" type="button" id="cancel-add">Cancel</button></div>
 </form>
 </section>
-<p class="footer">Pocket AI MVP · Currency: CAD · Your entries are saved in this browser on this device. This version has no login, cloud sync, bank connection, or live AI. Export your data regularly. Do not enter account numbers, passwords, or other sensitive banking credentials.</p>
+<p class="footer">Pocket Version 2 · Currency: CAD · Your entries are saved in this browser on this device. This version has no login, cloud sync, bank connection, or live AI. Export your data regularly. Do not enter account numbers, passwords, or other sensitive banking credentials.</p>
 </div>
 <script>
 (() => {
@@ -96,7 +103,29 @@ $('open-add').onclick=openAdd;$('open-add-2').onclick=openAdd;$('cancel-add').on
 $('transaction-form').addEventListener('submit',e=>{e.preventDefault();const description=$('tx-description').value.trim(),amount=Number($('tx-amount').value),kind=$('tx-kind').value;if(!description||!Number.isFinite(amount)||amount<=0||amount>1e7)return;state.transactions.unshift({description,amount,kind,date:new Date().toLocaleDateString('en-CA')});persist();render();e.target.reset();$('add-panel').style.display='none'});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-delete]');if(!b)return;const i=Number(b.dataset.delete);if(Number.isInteger(i)&&i>=0&&i<state.transactions.length&&confirm('Delete this transaction?')){state.transactions.splice(i,1);persist();render()}});
 $('save-goal').onclick=()=>{const name=$('goal-name').value.trim(),target=Number($('goal-target').value),saved=Number($('goal-saved').value);if(!name||!Number.isFinite(target)||!Number.isFinite(saved)||target<=0||saved<0||target>1e8||saved>1e8){$('goal-status').textContent='Please enter a valid goal and amounts.';return}state.goal={name,target,saved};persist();render();$('goal-status').textContent='Goal saved on this device.'};
-function coach(q){const t=totals(),left=Math.max(0,state.goal.target-state.goal.saved),s=q.toLowerCase();if(/save|goal|target/.test(s))return `Your goal is “${state.goal.name}”. You've set aside ${money(state.goal.saved)} of ${money(state.goal.target)}, leaving ${money(left)}. At $100 per month, that remaining amount would take about ${Math.ceil(left/100)} months. Choose a monthly amount that still leaves room for essentials and unexpected costs.`;if(/spend|expense|where/.test(s)){const expenses=state.transactions.filter(x=>x.kind==='expense').sort((a,b)=>b.amount-a.amount).slice(0,3);return `Your recorded expenses total ${money(t.spent)}. ${expenses.length?'Your largest entries are: '+expenses.map(x=>x.description+' ('+money(x.amount)+')').join(', ')+'.':'You have not entered expenses yet.'} Add consistent entries over time for a more useful picture.`}if(/budget|plan/.test(s))return `A simple starting plan: 1) list bills and essentials due before your next income; 2) choose a realistic savings amount; 3) set a separate flexible-spending limit; 4) review your actual spending weekly. Your recorded net is ${money(t.income-t.spent)}, but this may not include every bill or source of income.`;return 'I can help you think through a budget, savings goal, or your recorded transactions. Try “How can I save for my goal?”, “Where am I spending money?”, or “Make me a budget.” This is rule-based guidance, not live AI or professional financial advice.'}
+function coach(q){
+ const t=totals(),net=state.balanceStart+t.income-t.spent,remaining=Math.max(0,state.goal.target-state.goal.saved),s=q.toLowerCase();
+ const priceMatch=s.match(/(?:\$\s*|(?:spend|buy|cost|afford)\s+(?:about\s+)?)([\d,]+(?:\.\d{1,2})?)/i);
+ const price=priceMatch?Number(priceMatch[1].replace(/,/g,'')):null;
+ if(/afford|can i (?:spend|buy)|should i (?:spend|buy)|enough (?:money|for)|purchase/.test(s)){
+  if(price===null||!Number.isFinite(price)||price<=0)return `How much would it cost? Try asking “Can I afford to spend $50?” I'll compare it with the money you've tracked.`;
+  const after=net-price;
+  if(!state.transactions.length)return `I don't have any transactions yet, so I can't estimate whether ${money(price)} fits your budget. Add some income and expenses first, then ask again. Remember to include upcoming bills.`;
+  return `Here's what your entries show:\n• Money in: ${money(t.income)}\n• Money out: ${money(t.spent)}\n• Tracked amount left: ${money(net)}\n• After a ${money(price)} purchase: ${money(after)}\n\n${after<0?'This purchase is more than the amount left in your tracked entries.':after<50?'That would leave very little room in your tracked amount.':'Your tracked amount would cover this purchase.'} I can't say for sure whether you can afford it because I don't know your bank balance, upcoming bills, or other commitments.`;
+ }
+ if(/how much (?:money|do i have)|balance|money left|left over|net/.test(s))return `From your entries: ${money(t.income)} in − ${money(t.spent)} out = ${money(net)} left. This is your tracked amount, not a confirmed bank balance. Remember any bills or spending you haven't added.`;
+ if(/save|saving|goal|target/.test(s)){
+  const pace=100;
+  return `Your goal: ${state.goal.name}\nSaved: ${money(state.goal.saved)} / ${money(state.goal.target)}\nStill needed: ${money(remaining)}\n\nExample: saving ${money(pace)} per month would take about ${Math.ceil(remaining/pace)} more months. Pick an amount that leaves room for essentials. To change your goal, open “Savings goals”.`;
+ }
+ if(/spend|expense|where|largest|most|analy[sz]e/.test(s)){
+  const expenses=state.transactions.filter(x=>x.kind==='expense').sort((a,b)=>b.amount-a.amount).slice(0,3);
+  return `You've entered ${money(t.spent)} in spending. ${expenses.length?'Your largest entries are '+expenses.map(x=>x.description+' ('+money(x.amount)+')').join(', ')+'.':'You haven’t entered any expenses yet.'} Keep adding entries to get a clearer picture. This is based only on the transactions you've entered.`;
+ }
+ if(/budget|plan/.test(s))return `Simple budget starter:\n1. List your bills and essentials due before your next income.\n2. Set aside money for those first.\n3. Choose a manageable savings amount.\n4. Use what's left for flexible spending.\n\nYour tracked amount left is ${money(net)}, but Pocket doesn't know your upcoming bills yet.`;
+ if(/income|earn|made|paid/.test(s))return `You've recorded ${money(t.income)} in income. Your recorded expenses are ${money(t.spent)}, leaving ${money(net)} in tracked money. Add every transaction for a better estimate.`;
+ return `I can help with spending, savings goals, and simple budgets based on your entries. Try “Can I afford to spend $50?”, “How much money do I have left?”, or “How can I save more?” I'm not connected to a live AI model yet.`;
+}
 function ask(q){if(!q.trim())return;const log=$('chat-log'),u=document.createElement('div');u.className='chat-user';u.textContent=q;const a=document.createElement('div');a.className='chat-ai';a.textContent=coach(q);log.append(u,a);$('ask-input').value='';a.scrollIntoView({behavior:'smooth',block:'nearest'})}
 $('ask-form').addEventListener('submit',e=>{e.preventDefault();ask($('ask-input').value)});
 document.querySelectorAll('[data-question]').forEach(b=>b.addEventListener('click',()=>ask(b.dataset.question)));
