@@ -1,5 +1,5 @@
 // Cache only Pocket's static assets, never user data. Prefer the network for updates.
-const CACHE='pocket-static-v5';
+const CACHE='pocket-static-v6';
 const ASSETS=['./','./index.html','./manifest.webmanifest'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
