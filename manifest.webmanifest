@@ -1,0 +1,10 @@
+{
+  "name": "Pocket AI \u2014 Personal Money Coach",
+  "short_name": "Pocket AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#153c2e",
+  "description": "A simple personal money tracker and savings coach.",
+  "icons": []
+}
