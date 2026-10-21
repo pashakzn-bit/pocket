@@ -1,7 +1,7 @@
 {
   "name": "Pocket — Money made clearer",
   "short_name": "Pocket",
-  "start_url": "./?version=4",
+  "start_url": "./?version=7",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f7f3",

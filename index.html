@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#103f30"><meta name="description" content="Pocket helps you plan your spending, budgets, savings goals, and next 12 months."><link rel="manifest" href="./manifest.webmanifest"><title>Pocket V6 — Your daily money brief</title><style>:root{color-scheme:light;--bg:#f5f7f3;--paper:#fff;--ink:#1b3025;--muted:#5a7062;--line:#dce7df;--brand:#176648;--branddark:#103f30;--mint:#e0f3e9;--amber:#86500d;--amberbg:#fff3df;--red:#9c3a33;--redbg:#fff0ed;--blue:#225b7b;--bluebg:#edf5fa;--radius:19px;--shadow:0 10px 35px #123d2910}
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#103f30"><meta name="description" content="Pocket helps you plan your spending, budgets, savings goals, and next 12 months."><link rel="manifest" href="./manifest.webmanifest"><title>Pocket V7 — Account Beta</title><style>:root{color-scheme:light;--bg:#f5f7f3;--paper:#fff;--ink:#1b3025;--muted:#5a7062;--line:#dce7df;--brand:#176648;--branddark:#103f30;--mint:#e0f3e9;--amber:#86500d;--amberbg:#fff3df;--red:#9c3a33;--redbg:#fff0ed;--blue:#225b7b;--bluebg:#edf5fa;--radius:19px;--shadow:0 10px 35px #123d2910}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.5;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.55}:is(button,input,select,textarea,summary):focus-visible{outline:3px solid #72c79a;outline-offset:2px}a{color:var(--brand)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(25px,4vw,35px);letter-spacing:-1px;line-height:1.18}h2{font-size:21px;letter-spacing:-.5px}h3{font-size:16px;letter-spacing:-.25px}.app{max-width:1170px;padding:20px 22px 60px;margin:auto}.top{display:flex;align-items:center;gap:10px;margin-bottom:18px}.mark{background:var(--branddark);color:#e4fff0;font-size:22px;width:45px;height:45px;border-radius:14px;display:grid;place-items:center;font-weight:850}.brand{font-size:25px;font-weight:850;letter-spacing:-1px;line-height:1}.brand span{color:#2cab75}.brand-sub{font-size:10px;color:var(--muted);letter-spacing:1.1px;font-weight:750;margin-top:5px}.right{margin-left:auto;display:flex;align-items:center;gap:7px}.vbadge{font-size:11px;padding:6px 10px;border-radius:30px;background:#e6efe8;color:#375b47;font-weight:800}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 16px;min-height:43px;background:var(--branddark);color:#fff;border:1px solid var(--branddark);border-radius:12px;font-size:13px;font-weight:760;text-decoration:none}.btn:hover{filter:brightness(1.07)}.btn.secondary{background:#fff;color:var(--branddark);border-color:var(--line)}.btn.soft{background:var(--mint);border-color:var(--mint);color:#105038}.btn.ghost{border:0;background:none;color:var(--branddark);min-height:32px;padding:6px 5px}.btn.small{min-height:34px;padding:6px 11px;font-size:12px}.btn.danger{border-color:#f5d5d0;background:var(--redbg);color:var(--red)}.nav{display:flex;gap:5px;overflow-x:auto;padding:6px;border:1px solid var(--line);border-radius:15px;background:#fff;margin-bottom:17px}.nav button{border:0;flex:1;background:none;border-radius:10px;color:var(--muted);font-weight:770;padding:11px 16px;white-space:nowrap}.nav button.active{background:var(--mint);color:#11563b}.view,.tool{display:none}.view.active,.tool.active{display:block}.hero{border-radius:24px;background:linear-gradient(120deg,#103c2d,#207d58);color:#fff;padding:26px 29px;display:grid;grid-template-columns:1.25fr .75fr;gap:17px;align-items:center;margin-bottom:14px;box-shadow:var(--shadow)}.hero .eyebrow{color:#c4edda}.hero h1{font-size:clamp(30px,4vw,43px);margin:7px 0}.hero p{color:#d6eee1;font-size:13px;line-height:1.6;margin:5px 0 0;max-width:530px}.hero .actions{justify-content:end;display:flex;gap:9px;flex-wrap:wrap}.hero .actions .btn{background:#e2ffeb;color:#154930;border-color:#e2ffeb}.hero .actions .btn.secondary{background:#1c6349;color:#fff;border-color:#468b6b}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:19px;min-width:0}.card h2,.card h3{margin-bottom:8px}.card-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.card-title h2,.card-title h3{margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.stack{display:grid;gap:14px}.eyebrow{font-size:12px;font-weight:780;color:var(--muted);letter-spacing:.35px}.muted{color:var(--muted)}.small{font-size:12px}.micro{font-size:11px}.big{font-size:clamp(25px,3vw,34px);font-weight:870;letter-spacing:-1px;line-height:1.15;margin:7px 0}.green{color:var(--brand)}.red{color:var(--red)}.section-title{font-size:23px;font-weight:840;margin:7px 0 4px;letter-spacing:-.7px}.section-sub{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:16px}.notice{padding:13px 15px;border:1px solid #d3e7d8;background:#eef8f1;color:#315d43;border-radius:13px;font-size:13px;line-height:1.6}.notice.warn{background:var(--amberbg);border-color:#f4e0bd;color:var(--amber)}.notice.bad{background:var(--redbg);border-color:#f0d1ca;color:var(--red)}.notice.blue{background:var(--bluebg);border-color:#d9e7f1;color:var(--blue)}.notice + .notice{margin-top:9px}.label{display:block;font-size:13px;font-weight:730;margin-bottom:12px}.field{display:block;width:100%;padding:10px 11px;margin-top:5px;min-height:44px;border-radius:11px;border:1px solid #c9d9cd;background:#fff;color:var(--ink)}.field:disabled{background:#f1f5f2}.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px}.field-help{font-size:12px;color:var(--muted);margin:-5px 0 13px;line-height:1.55}.form-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.result{background:#f1f8f2;border:1px solid #d9e9db;border-radius:15px;padding:16px;line-height:1.65;font-size:13px}.result .headline{font-size:20px;font-weight:850;line-height:1.3;color:#15563d;margin-bottom:7px}.result p{margin:8px 0}.result ul{padding-left:21px;margin:9px 0}.result li{margin:4px 0}.plain-stat{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line)}.plain-stat:first-child{border-top:0}.bar{height:8px;background:#e6eee8;border-radius:12px;overflow:hidden;margin:8px 0}.bar>div{background:#238b60;border-radius:12px;height:100%}.bar>div.over{background:#cc8d42}.bar-head{display:flex;justify-content:space-between;gap:12px;font-size:13px}.bars{display:grid;gap:11px}.tag{background:#e8f6ed;color:#1c6445;font-size:11px;font-weight:750;padding:4px 8px;border-radius:20px;white-space:nowrap}.tag.essential{background:#e7f2f9;color:#235777}.empty{font-size:13px;color:var(--muted);padding:15px 0}.tool-tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.tile{background:white;border:1px solid var(--line);border-radius:15px;text-align:left;padding:13px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;min-height:146px}.tile:hover{border-color:#9bc9a8}.tile-icon{font-size:24px;line-height:1.2}.tile strong{font-size:13px;line-height:1.35}.tile span:last-child{font-size:11px;line-height:1.4;color:var(--muted)}.tool-menu{display:flex;gap:8px;overflow-x:auto;margin-bottom:16px;padding-bottom:3px}.tool-menu button{padding:10px 12px;border-radius:11px;white-space:nowrap;border:1px solid var(--line);background:#fff;color:#526d5d;font-size:12px;font-weight:760}.tool-menu button.active{background:var(--branddark);border-color:var(--branddark);color:#fff}.tool-head{margin:0 0 14px}.tool-head p{color:var(--muted);font-size:13px;margin:4px 0 0}.records{display:grid}.entry{border-top:1px solid var(--line);padding:12px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:9px}.entry:first-child{border-top:0}.entry-main{flex:1;min-width:0}.entry-main strong{display:block;overflow-wrap:anywhere}.entry-right{text-align:right;flex-shrink:0}.entry-right strong{display:block}.entry-meta{font-size:12px;color:var(--muted);margin:3px 0}.inline-actions{display:flex;justify-content:end;gap:5px}.inline-actions button{border:0;background:none;text-decoration:underline;color:#466552;padding:5px 2px;font-size:12px}.divider{border:0;border-top:1px solid var(--line);margin:15px 0}.list-choice{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:#50685a;line-height:1.5;margin:3px 0 13px}.list-choice input{margin-top:3px;accent-color:var(--brand)}.budget-progress{margin-top:5px}.timeline{display:grid;gap:9px}.month{display:grid;grid-template-columns:78px minmax(0,1fr) 92px;align-items:center;gap:10px;font-size:12px}.month time{font-weight:800}.month strong{text-align:right}.month .bar{margin:0}.month .bar>div.negative{background:#bd6d49}.timeline-legend{font-size:12px;color:var(--muted)}.quick{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.quick button{border:1px solid var(--line);background:white;color:#315a43;padding:8px 12px;border-radius:26px;font-size:12px}.chat{display:grid;gap:9px;max-height:430px;overflow-y:auto;margin:14px 0;padding-right:4px}.chat-message{border-radius:13px;padding:11px 14px;max-width:92%;line-height:1.6;white-space:pre-wrap;font-size:13px}.chat-message.user{justify-self:end;background:#e1f5e8}.chat-message.pocket{justify-self:start;background:#f0f4f0;border:1px solid #e0e9df}.coach-form{display:flex;gap:8px}.coach-form .field{flex:1;margin:0}.help-link{border:0;background:none;padding:0;font-weight:800;color:var(--brand);text-decoration:underline;font-size:inherit}.mini-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.mini-flow>div{border:1px solid var(--line);border-radius:13px;padding:12px}.mini-flow strong{display:block;font-size:16px;margin-top:5px}.pill{background:#e6f3eb;color:#1e6345;border-radius:999px;font-size:11px;padding:5px 9px;font-weight:780;display:inline-block;margin-bottom:9px}.footer{font-size:12px;color:var(--muted);margin-top:25px;line-height:1.65}.hidden{display:none!important}details.more{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fbfdfb}details.more summary{cursor:pointer;font-weight:770;font-size:13px}details.more[open] summary{margin-bottom:12px}.footer strong{color:#3c5644}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#1e4835;color:#fff;border-radius:11px;padding:11px 19px;box-shadow:var(--shadow);font-size:13px;z-index:20;max-width:92vw}.status{font-size:12px;color:var(--muted);margin:8px 0 0}.warnline{font-size:12px;color:var(--amber)}
 @media(max-width:860px){.hero{grid-template-columns:1fr}.hero .actions{justify-content:start}.tool-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.app{padding:13px 12px 40px}.brand{font-size:23px}.vbadge{display:none}.top{margin-bottom:12px}.nav{margin-bottom:13px}.nav button{flex:1;min-width:0;padding:10px 6px;font-size:12px;white-space:normal;line-height:1.25}.nav{gap:3px}.hero{padding:22px 19px;border-radius:19px}.hero h1{font-size:31px}.grid,.grid.three{grid-template-columns:1fr}.card{padding:16px}.tool-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tile{min-height:127px}.row3{grid-template-columns:1fr 1fr}.coach-form{flex-wrap:wrap}.coach-form .field{flex:1 1 100%}.coach-form .btn{flex:1}.chat-message{max-width:98%}.mini-flow{grid-template-columns:1fr}.right .btn{font-size:11px;padding:7px}.month{grid-template-columns:63px minmax(0,1fr) 83px;gap:6px}}@media(max-width:375px){.row2,.row3{grid-template-columns:1fr}.tile{min-height:150px}.hero .actions{width:100%}.hero .actions .btn{flex:1}.month{grid-template-columns:55px minmax(0,1fr) 76px}}
 
@@ -17,13 +17,67 @@
 .daily-intro{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:5px 0 17px}.daily-intro h1{margin:3px 0 4px}.daily-intro p{margin:0;font-size:13px}
 .daily-brief{margin:15px 0}.daily-brief .pill{margin:0}.brief-item{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}.brief-item:first-child{border-top:0}.brief-icon{flex-shrink:0;width:34px;height:34px;border-radius:11px;background:var(--mint);display:grid;place-items:center}.brief-item strong{display:block;font-size:14px}.brief-item p{margin:3px 0 0;color:var(--muted);font-size:12px}.brief-warning .brief-icon{background:var(--amberbg)}#brief-change{padding-top:10px;border-top:1px solid var(--line)}
 @media(max-width:600px){.daily-intro{align-items:flex-start}.daily-intro h1{font-size:26px}.daily-intro .btn{padding:7px 9px;min-height:37px}}
+</style><style>
+.auth-shell{min-height:100dvh;display:grid;place-items:center;padding:26px 16px;background:radial-gradient(circle at 15% 2%,#daf5e6 0,transparent 43%),var(--bg)}
+.auth-card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 65px #123d291c;max-width:460px;width:100%;padding:27px}
+.auth-brand{display:flex;gap:12px;align-items:center;margin-bottom:27px}.auth-mark{background:var(--branddark);color:white;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:25px;font-weight:800}
+.auth-card h1{font-size:30px;margin-bottom:6px}.auth-card .muted{font-size:13px;line-height:1.55}
+.auth-loading{color:var(--muted);padding:12px 0}.auth-tabs{display:flex;border-radius:11px;background:#edf4ef;padding:4px;gap:4px;margin:20px 0}
+.auth-tabs button{width:50%;border:0;background:transparent;border-radius:9px;padding:9px;color:var(--muted);font-weight:750}
+.auth-tabs button.active{background:white;color:var(--branddark);box-shadow:0 1px 4px #123d2912}
+.auth-primary{width:100%;margin-top:5px}.auth-card #auth-forgot{display:block;margin:8px auto}
+.auth-message{background:var(--bluebg);padding:12px;border-radius:10px;color:var(--blue);font-size:13px;margin:12px 0}
+.auth-message.bad{background:var(--redbg);color:var(--red)}.auth-privacy{font-size:12px;color:var(--muted);line-height:1.55;border-top:1px solid var(--line);padding-top:13px;margin-top:19px}
+.auth-choice-actions{display:grid;gap:9px;margin-top:16px}.cloud-strip{background:#eaf5ee;border:1px solid #cce8d5;color:#15563c;border-radius:12px;padding:8px 12px;font-size:12px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.cloud-strip.warn{background:#fff3df;border-color:#f3d89b;color:#7a4d12}.cloud-controls{display:flex;gap:6px;flex-wrap:wrap}
+@media(max-width:600px){.auth-card{padding:22px}.auth-card h1{font-size:25px}.cloud-strip{align-items:flex-start}}
 </style></head>
 <body>
-<div class="app">
+<section id="auth-shell" class="auth-shell" aria-label="Pocket account">
+ <div class="auth-card">
+  <div class="auth-brand"><span class="auth-mark">↗</span><div><div class="brand">pocket<span>.</span></div><div class="brand-sub">ACCOUNT BETA · YOUR MONEY, YOUR LOGIN</div></div></div>
+  <div class="auth-loading" id="auth-loading">Connecting securely to Pocket…</div>
+  <div id="auth-panel" class="hidden">
+   <h1 id="auth-heading">Welcome back</h1><p class="muted" id="auth-caption">Sign in to your Pocket account.</p>
+   <div class="auth-tabs"><button type="button" id="auth-login-tab" class="active">Log in</button><button type="button" id="auth-signup-tab">Create account</button></div>
+   <form id="auth-form">
+    <label class="label">Email address<input id="auth-email" class="field" type="email" autocomplete="email" inputmode="email" required maxlength="254" placeholder="you@example.com"></label>
+    <label class="label">Password<input id="auth-password" class="field" type="password" autocomplete="current-password" minlength="8" maxlength="128" required placeholder="At least 8 characters"></label>
+    <button class="btn auth-primary" id="auth-submit" type="submit">Log in</button>
+   </form>
+   <button id="auth-forgot" class="btn ghost small" type="button">Forgot password?</button>
+   <p id="auth-message" class="auth-message hidden" role="status" aria-live="polite"></p>
+   <p class="auth-privacy">Early development beta. Use fictional amounts for now; don't enter bank passwords or account numbers.</p>
+   <button type="button" id="auth-offline" class="btn secondary auth-primary">Use Pocket without an account</button>
+  </div>
+  <div id="auth-recovery" class="hidden">
+   <h1>Set a new password</h1><p class="muted">Choose a new password for your Pocket account.</p>
+   <form id="auth-password-recovery-form"><label class="label">New password<input type="password" id="recovery-password" class="field" minlength="8" maxlength="128" autocomplete="new-password" required></label><button type="submit" class="btn auth-primary" id="recovery-submit">Update password</button></form>
+   <p class="auth-message hidden" id="recovery-message" role="status"></p>
+  </div>
+  <div id="auth-choose" class="hidden">
+   <h1>Set up your Pocket account</h1>
+   <p class="muted">This account has no cloud data yet. Choose how to get started. Nothing from your device is uploaded without your permission.</p>
+   <div id="auth-legacy-info" class="notice blue hidden">We found previous Pocket data in this browser. Download a backup before moving it into your account.</div>
+   <div class="auth-choice-actions">
+    <button type="button" class="btn auth-primary hidden" id="auth-import-local">Copy this device's Pocket data to my account</button>
+    <button type="button" class="btn secondary auth-primary" id="auth-start-blank">Start with an empty account</button>
+    <button type="button" class="btn ghost auth-primary" id="auth-save-legacy">Download a backup of this device's old data</button>
+    <button type="button" class="btn ghost auth-primary" id="auth-choose-logout">Sign out</button>
+   </div>
+   <p id="auth-choose-message" class="auth-message hidden" role="status"></p>
+  </div>
+ </div>
+</section>
+<div class="app hidden" id="pocket-app">
   <header class="top">
     <div class="mark" aria-hidden="true">↗</div><div><div class="brand">pocket<span>.</span></div><div class="brand-sub">MONEY MADE CLEARER</div></div>
-    <div class="right"><span class="vbadge">V6 · BETA</span><button id="backup-top" type="button" class="btn secondary small">↓ Back up</button></div>
+    <div class="right"><span class="vbadge">V7 · ACCOUNTS</span><button id="account-signout" type="button" class="btn secondary small hidden">Log out</button><button id="backup-top" type="button" class="btn secondary small">↓ Back up</button></div>
   </header>
+  <div id="cloud-strip" class="cloud-strip" role="status" aria-live="polite">
+    <span id="cloud-label">☁ Account setup in progress</span>
+    <div class="cloud-controls"><button class="btn secondary small hidden" type="button" id="cloud-retry">Retry sync</button><button class="btn secondary small hidden" type="button" id="cloud-reload">Use cloud version</button><button class="btn secondary small hidden" type="button" id="cloud-download">Back up pending changes</button></div>
+  </div>
   <nav class="nav" aria-label="Main pages">
     <button type="button" data-tab="home" class="active" aria-current="page">⌂ Home</button>
     <button type="button" data-tab="money">↕ My money</button>
@@ -64,7 +118,7 @@
       <button type="button" class="tile" data-tool-open="setup"><strong>My setup</strong><span>Change your money plan</span></button>
     </div></details>
     <div class="v5-tracked small muted">Recorded income minus expenses: <strong id="tracked-total">$0</strong>. This is not your bank balance.</div>
-    <div class="hidden" id="home-spend-chart"></div>
+    
     <details class="v5-more"><summary>See spending charts and longer forecasts</summary><div class="grid" style="margin-top:15px">
       <div class="card"><div class="card-title"><h2>This month's spending</h2><button class="btn ghost small" data-tab-go="money">View entries →</button></div><div id="home-spend-chart" class="bars"></div></div>
       <div class="card"><div class="card-title"><h2>Next 12 months</h2><button class="btn ghost small" data-tool-open="calendar">See forecast →</button></div><div id="home-future-preview" class="stack"></div></div>
@@ -74,7 +128,7 @@
   <section class="view" id="money">
     <h1 class="section-title">My money</h1><p class="section-sub">Record what you earn and spend. Add monthly spending limits where useful. Everything is editable.</p>
     <div class="grid">
-      <div class="card"><div class="card-title"><h2 id="tx-title">Add money in or out</h2><span class="tag">On this device</span></div>
+      <div class="card"><div class="card-title"><h2 id="tx-title">Add money in or out</h2><span class="tag" id="money-storage-mode">Account beta</span></div>
         <form id="tx-form"><input type="hidden" id="tx-edit-id"><label class="label">What was it?<input id="tx-desc" class="field" required maxlength="80" placeholder="e.g. Paycheque or lunch"></label>
         <div class="row2"><label class="label">Amount (CAD)<input id="tx-amount" class="field" required type="number" min="0.01" max="10000000" step="0.01" placeholder="50"></label><label class="label">Type<select id="tx-kind" class="field"><option value="expense">Money out</option><option value="income">Money in</option></select></label></div>
         <div class="row2"><label class="label">Category<select id="tx-cat" class="field"></select></label><label class="label">Date<input id="tx-date" class="field" required type="date"></label></div>
@@ -111,7 +165,7 @@
         <label class="label">Planning to save each week (CAD)<input id="plan-weekly" class="field" type="number" min="0" max="100000000" step="0.01" placeholder="e.g. 50"></label>
         <details class="more"><summary>Optional: emergency savings and debt</summary><div class="row2"><label class="label">Emergency fund target (CAD)<input class="field" id="plan-emergency-target" type="number" min="0" step="0.01"></label><label class="label">Emergency savings today (CAD)<input class="field" id="plan-emergency-saved" type="number" min="0" step="0.01"></label></div><div class="row2"><label class="label">Debt balance (CAD)<input class="field" id="plan-debt" type="number" min="0" step="0.01"></label><label class="label">Debt interest rate (APR %, optional)<input class="field" id="plan-debt-apr" type="number" min="0" max="100" step="0.01"></label></div></details>
         <div class="form-actions" style="margin-top:14px"><button class="btn" type="submit">Save my setup</button><span class="status" id="setup-status" role="status"></span></div></form></div>
-        <div class="stack"><div class="card"><h2>What Pocket knows</h2><div id="setup-health" class="stack"></div></div><div class="card"><h2>Back up and restore</h2><p class="section-sub">This beta saves data in this browser, not in an account. Back up before switching devices.</p><div class="form-actions"><button class="btn secondary small" id="export-data" type="button">↓ Export backup</button><button class="btn secondary small" id="import-btn" type="button">↑ Restore backup</button><input type="file" id="import-file" accept=".json,application/json" class="hidden"></div><p class="status">Restore replaces the current Pocket data only after you confirm. Keep your backup private.</p></div></div>
+        <div class="stack"><div class="card"><h2>What Pocket knows</h2><div id="setup-health" class="stack"></div></div><div class="card"><h2>Back up and restore</h2><p class="section-sub">In account mode, Pocket syncs to a cloud record and keeps a local emergency draft if saving fails. Export backups regularly. Offline mode stays on this device.</p><div class="form-actions"><button class="btn secondary small" id="export-data" type="button">↓ Export backup</button><button class="btn secondary small" id="import-btn" type="button">↑ Restore backup</button><input type="file" id="import-file" accept=".json,application/json" class="hidden"></div><p class="status">Restore replaces the current Pocket data only after you confirm. Keep your backup private.</p></div></div>
       </div>
     </section>
 
@@ -137,10 +191,11 @@
   </section>
   </main>
   <nav class="v5-bottom" aria-label="Quick navigation"><button data-tab="home" type="button">⌂<span>Home</span></button><button data-tab="money" type="button">＋<span>Activity</span></button><button data-tab="future" type="button">◎<span>Plan</span></button><button data-tab="coach" type="button">✳<span>Ask Pocket</span></button></nav>
-  <footer class="footer"><strong>Pocket V5 · Free budgeting prototype · CAD.</strong> Your information is stored locally in this browser. No bank connection, financial transactions, cloud account or live AI service. All forecasts are estimates based on what you enter, not personalized financial advice. Avoid entering passwords or account numbers.</footer>
+  <footer class="footer"><strong>Pocket V7 · Account testing beta · CAD.</strong> When signed in, Pocket attempts to sync your entries to your private Supabase account. Offline mode uses only this device. No bank connection or live AI service. Forecasts are estimates, not financial advice. Never enter bank credentials or account numbers. This is not ready for real customer financial information.</footer>
 </div>
 <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.74.0/dist/umd/supabase.js" crossorigin="anonymous"></script>
 <script>
 (()=>{
 'use strict';
@@ -168,8 +223,233 @@ const bills=Array.isArray(s.bills)?s.bills.filter(Boolean).map((bill,i)=>({id:St
 const transactions=Array.isArray(s.transactions)?s.transactions.filter(Boolean).map((t,i)=>({id:String(t.id||'legacy-'+i),kind:t.kind,description:String(t.description||'Transaction').slice(0,80),amount:round(Number(t.amount)),category:cats.includes(t.category)?t.category:inferCategory(t.description),date:t.date})).filter(t=>['income','expense'].includes(t.kind)&&t.amount>0&&t.amount<1e8&&asUTC(t.date)):[];
 const next=String(s.pay?.next||'');return {transactions,goal:{name:String(goal.name||b.goal.name).slice(0,60),target:clamp(val(goal.target)??1000,1,1e8),saved:clamp(val(goal.saved)??0,0,1e8)},balanceStart:round(val(s.balanceStart)??0),budgets,bills,planning:p,pay:{frequency:['weekly','biweekly','semimonthly','monthly','irregular'].includes(s.pay?.frequency)?s.pay.frequency:'biweekly',next:asUTC(next)?next:''}}}
 function load(){try{const data=localStorage.getItem(KEY);return normalize(data?JSON.parse(data):base())}catch(e){console.warn('Pocket cannot parse old saved data',e);return normalize(base())}}
-let state=load(),shownTx=50,lastTopic='',lastPurchase=null,manualCategory=false;
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));return true}catch(err){alert('Your browser could not save your changes. Please export a backup and check storage space.');return false}}
+let state=normalize(base()),shownTx=50,lastTopic='',lastPurchase=null,manualCategory=false;
+// Account beta: existing V6 storage is read-only until the user explicitly selects offline or import.
+const SUPABASE_URL='https://uoveohqkyxayqgmbeohb.supabase.co';
+const SUPABASE_PUBLIC_KEY='sb_publishable_yD6Qes5S4I9_DlexydN5UA_6zjHBvkg';
+const api=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLIC_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+let activeUser=null,offlineMode=false,cloudUpdatedAt=null,cloudReady=false;
+let pendingChange=0,savedChange=0,cloudSaving=false,syncTimer=null,authEpoch=0,loginBusy=false;
+let pendingDraft=null,requestedCloud=null,conflicted=false,authMode='login',recoveryRequested=false;
+const draftKey=id=>'pocket-v7-pending-'+id;
+function showAuthPane(name){
+  $('auth-loading').classList.toggle('hidden',name!=='loading');
+  for(const pane of ['panel','choose','recovery'])$('auth-'+pane).classList.toggle('hidden',name!==pane);
+  $('auth-shell').classList.remove('hidden');$('pocket-app').classList.add('hidden');
+}
+function authNotice(id,msg,error=false){const e=$(id);e.textContent=msg;e.classList.toggle('bad',error);e.classList.remove('hidden')}
+function cloudStatus(msg,warn=false,showRetry=false,showReload=false){
+  $('cloud-label').textContent=msg;$('cloud-strip').classList.toggle('warn',warn);
+  $('cloud-retry').classList.toggle('hidden',!showRetry);
+  $('cloud-reload').classList.toggle('hidden',!showReload);
+  $('cloud-download').classList.toggle('hidden',!showReload&&!showRetry);
+}
+function hasLegacyData(){
+ try{const raw=localStorage.getItem(KEY);return !!raw&&JSON.stringify(normalize(JSON.parse(raw)))!==JSON.stringify(normalize(base()))}
+ catch(e){return !!localStorage.getItem(KEY)}
+}
+function downloadBackup(data,tag='backup'){
+ const blob=new Blob([JSON.stringify(normalize(data),null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;
+ link.download=`pocket-${tag}-${now()}.json`;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+}
+function openApp(data){state=normalize(data);cloudReady=true;shownTx=50;resetTx();resetBill();fillSetup();render();
+  $('auth-shell').classList.add('hidden');$('pocket-app').classList.remove('hidden');
+  $('money-storage-mode').textContent=offlineMode?'On this device only':'Cloud account beta';
+  $('account-signout').textContent=offlineMode?'Exit offline':'Log out';$('account-signout').classList.remove('hidden');
+  if(offlineMode)cloudStatus('📱 Offline mode — saved only in this browser. No cross-device syncing.');
+  else cloudStatus('☁ Cloud data loaded — changes sync to your account.');
+}
+function persist(){
+  if(offlineMode){try{localStorage.setItem(KEY,JSON.stringify(state));return true}catch(err){alert('Pocket could not save locally. Export a backup.');return false}}
+  if(!activeUser||!cloudReady){alert('Your account data is not ready. Please sign in again.');return false}
+  try{localStorage.setItem(draftKey(activeUser.id),JSON.stringify({data:normalize(state),baseVersion:cloudUpdatedAt,savedAt:new Date().toISOString()}));}
+  catch(err){alert('Pocket could not save a local emergency draft. Download a backup before leaving.');return false}
+  pendingChange++;
+  cloudStatus('⏳ Changes saved as a local draft; syncing to cloud…');
+  if(!conflicted){clearTimeout(syncTimer);syncTimer=setTimeout(flushCloud,380)}
+  return true;
+}
+async function flushCloud(){
+ if(!activeUser||offlineMode||!cloudReady||cloudSaving||conflicted)return;
+ const id=activeUser.id, epoch=authEpoch, serial=pendingChange;
+ if(serial===savedChange){cloudStatus('✓ Saved to your Pocket cloud account');return}
+ const payload=normalize(state);
+ cloudSaving=true;cloudStatus('⏳ Syncing changes to Pocket cloud…');
+ try{
+  // Optimistic concurrency: never overwrite a newer record from another device.
+  const nextTime=new Date(Math.max(Date.now(),(Date.parse(cloudUpdatedAt)||0)+1)).toISOString();
+  const {data,error}=await api.from('pocket_data').update({data:payload,updated_at:nextTime})
+   .eq('user_id',id).eq('updated_at',cloudUpdatedAt).select('updated_at').maybeSingle();
+  if(epoch!==authEpoch||activeUser?.id!==id)return;
+  if(error)throw error;
+  if(!data){conflicted=true;cloudStatus('⚠️ This account changed elsewhere. Your local changes were kept. Back them up before reloading.',true,false,true);return}
+  cloudUpdatedAt=data.updated_at;savedChange=serial;
+  if(pendingChange===serial){localStorage.removeItem(draftKey(id));cloudStatus('✓ Saved to your Pocket cloud account')}
+  else{
+   localStorage.setItem(draftKey(id),JSON.stringify({data:normalize(state),baseVersion:cloudUpdatedAt,savedAt:new Date().toISOString()}));
+   cloudStatus('⏳ More edits waiting to sync…');
+  }
+ }catch(err){
+  if(epoch!==authEpoch||activeUser?.id!==id)return;
+  console.error('Pocket cloud sync failed:',err);
+  cloudStatus('⚠️ Could not sync. Your edits are saved on this device only. Retry when connected.',true,true,false);
+ }finally{
+  cloudSaving=false;
+  if(activeUser?.id===id&&epoch===authEpoch&&!conflicted&&savedChange<pendingChange){
+   // On failure require a manual retry; do not loop endlessly.
+   const message=$('cloud-label').textContent;
+   if(!message.includes('Could not sync')){clearTimeout(syncTimer);syncTimer=setTimeout(flushCloud,250)}
+  }
+ }
+}
+async function loadAccount(session){
+ const user=session?.user,epoch=++authEpoch;
+ if(!user){return signedOut()}
+ clearTimeout(syncTimer);activeUser=user;offlineMode=false;cloudReady=false;cloudSaving=false;conflicted=false;
+ showAuthPane('loading');$('auth-loading').textContent='Loading your private Pocket data…';
+ try{
+  const {data,error}=await api.from('pocket_data').select('data,updated_at').eq('user_id',user.id).maybeSingle();
+  if(epoch!==authEpoch||activeUser?.id!==user.id)return;
+  if(error)throw error;
+  requestedCloud=data;
+  if(!data){
+   $('auth-legacy-info').classList.toggle('hidden',!hasLegacyData());
+   $('auth-import-local').classList.toggle('hidden',!hasLegacyData());
+   showAuthPane('choose');return;
+  }
+  cloudUpdatedAt=data.updated_at;
+  const raw=localStorage.getItem(draftKey(user.id));
+  if(raw){
+   try{
+    const draft=JSON.parse(raw);pendingDraft=draft;
+    state=normalize(draft.data);
+    cloudReady=true;openApp(state);
+    if(draft.baseVersion===cloudUpdatedAt){
+      conflicted=false;pendingChange=1;savedChange=0;
+      cloudStatus('⚠️ Recovered changes that have not reached your cloud account. Back up now, then press Retry sync.',true,true,false);
+    }else{
+      conflicted=true;
+      cloudStatus('⚠️ The cloud account changed while this browser had unsynced edits. Back up your edits before choosing the cloud version.',true,false,true);
+    }
+    return;
+   }catch(e){console.warn('Could not recover prior local draft:',e);cloudStatus('Previous local draft unreadable.',true)}
+  }
+  pendingDraft=null;savedChange=0;pendingChange=0;openApp(data.data);
+  if(hasLegacyData())cloudStatus('☁ Cloud account loaded. Old V6 browser entries were NOT copied; use Restore backup to import them.');
+ }catch(err){
+  if(epoch!==authEpoch)return;
+  console.error('Pocket account load failed:',err);
+  showAuthPane('panel');authNotice('auth-message','Could not load your cloud data. Please check internet access, the Supabase table and its RLS policies, then log in again.',true)
+ }
+}
+async function createAccountRow(payload){
+ if(!activeUser)return;
+ const id=activeUser.id,epoch=authEpoch;
+ $('auth-start-blank').disabled=true;$('auth-import-local').disabled=true;
+ try{
+  const {data,error}=await api.from('pocket_data').insert({user_id:id,data:normalize(payload),updated_at:new Date().toISOString()}).select('data,updated_at').single();
+  if(epoch!==authEpoch||activeUser?.id!==id)return;
+  if(error)throw error;
+  cloudUpdatedAt=data.updated_at;savedChange=0;pendingChange=0;pendingDraft=null;
+  openApp(data.data);cloudStatus('✓ Private Pocket cloud account created');
+ }catch(err){
+  console.error(err);authNotice('auth-choose-message','Unable to create your cloud record. If the account was opened elsewhere, sign out and sign back in. Check the table permissions and internet connection.',true);
+ }finally{$('auth-start-blank').disabled=false;$('auth-import-local').disabled=false}
+}
+function signedOut(){authEpoch++;activeUser=null;offlineMode=false;cloudReady=false;cloudUpdatedAt=null;pendingDraft=null;conflicted=false;pendingChange=0;savedChange=0;
+ clearTimeout(syncTimer);state=normalize(base());render();
+ showAuthPane('panel');$('auth-loading').textContent='Connecting securely to Pocket…';
+}
+async function logOut(){
+ if(offlineMode){signedOut();return}
+ if(pendingChange!==savedChange||conflicted){
+  if(!confirm('You have edits that may not be saved in the cloud. Download a backup before signing out. Continue?'))return;
+  downloadBackup(state,'unsynced');
+ }
+ loginBusy=false;
+ try{await api.auth.signOut()}catch(err){alert('Could not complete sign out. Try again.');return}
+ signedOut();
+}
+function initAccountForms(){
+ $('auth-login-tab').addEventListener('click',()=>setAuthMode('login'));
+ $('auth-signup-tab').addEventListener('click',()=>setAuthMode('signup'));
+ $('auth-form').addEventListener('submit',async e=>{
+  e.preventDefault();if(!api||loginBusy)return;
+  const email=$('auth-email').value.trim(),password=$('auth-password').value;
+  if(password.length<8)return authNotice('auth-message','Use a password of at least 8 characters.',true);
+  loginBusy=true;$('auth-submit').disabled=true;
+  authNotice('auth-message',authMode==='signup'?'Creating your account…':'Signing in…');
+  try{
+   const res=authMode==='signup'
+    ?await api.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}})
+    :await api.auth.signInWithPassword({email,password});
+   if(res.error)throw res.error;
+   if(authMode==='signup'&&!res.data.session)authNotice('auth-message','Check your email to confirm your account. Then return here and log in.');
+   else if(res.data.session)await loadAccount(res.data.session);
+  }catch(err){authNotice('auth-message',String(err.message||'Could not sign in. Please retry.'),true)}
+  finally{loginBusy=false;$('auth-submit').disabled=false;$('auth-password').value=''}
+ });
+ $('auth-forgot').addEventListener('click',async()=>{
+  if(!api)return authNotice('auth-message','Connection library unavailable. Reload when online.',true);
+  const email=$('auth-email').value.trim();if(!email)return authNotice('auth-message','Enter your email first, then click Forgot password.',true);
+  const {error}=await api.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});
+  authNotice('auth-message',error?error.message:'If the account exists, you will receive a password reset email. Check your inbox.',!!error);
+ });
+ $('auth-password-recovery-form').addEventListener('submit',async e=>{e.preventDefault();
+  const password=$('recovery-password').value;
+  if(password.length<8)return authNotice('recovery-message','Use a password of at least 8 characters.',true);
+  $('recovery-submit').disabled=true;
+  try{const {error}=await api.auth.updateUser({password});if(error)throw error;
+    authNotice('recovery-message','Password updated. Please log in again.');
+    await api.auth.signOut();setAuthMode('login');showAuthPane('panel');
+  }catch(err){authNotice('recovery-message',err.message||'Unable to update password',true)}
+  finally{$('recovery-submit').disabled=false;$('recovery-password').value=''}
+ });
+ $('auth-offline').addEventListener('click',async()=>{
+   if(activeUser){await api?.auth.signOut()}
+   authEpoch++;activeUser=null;offlineMode=true;cloudReady=true;openApp(load());
+ });
+ $('auth-import-local').addEventListener('click',()=>{
+  if(!confirm('Copy this browser’s old Pocket data into the new cloud account? This creates your first cloud record. Use fictional data for beta testing.'))return;
+  createAccountRow(load());
+ });
+ $('auth-start-blank').addEventListener('click',()=>createAccountRow(base()));
+ $('auth-save-legacy').addEventListener('click',()=>downloadBackup(load(),'pre-cloud'));
+ $('auth-choose-logout').addEventListener('click',logOut);
+ $('account-signout').addEventListener('click',logOut);
+ $('cloud-retry').addEventListener('click',()=>{if(conflicted)return;flushCloud()});
+ $('cloud-download').addEventListener('click',()=>downloadBackup(state,'pending-edits'));
+ $('cloud-reload').addEventListener('click',async()=>{
+   if(!confirm('Discard the unsynced local edits on this device and load the cloud copy? Download a backup first.'))return;
+   const id=activeUser?.id;if(!id)return;
+   const {data,error}=await api.from('pocket_data').select('data,updated_at').eq('user_id',id).single();
+   if(error){cloudStatus('⚠️ Could not load cloud copy. Download a backup and retry.',true,false,true);return}
+   localStorage.removeItem(draftKey(id));conflicted=false;pendingDraft=null;pendingChange=0;savedChange=0;
+   cloudUpdatedAt=data.updated_at;openApp(data.data);
+ });
+}
+function setAuthMode(mode){authMode=mode;
+ $('auth-login-tab').classList.toggle('active',mode==='login');$('auth-signup-tab').classList.toggle('active',mode==='signup');
+ $('auth-heading').textContent=mode==='login'?'Welcome back':'Create your Pocket account';
+ $('auth-caption').textContent=mode==='login'?'Sign in to your private money plan.':'Sign up with your email. We will send you a verification link.';
+ $('auth-submit').textContent=mode==='login'?'Log in':'Create account';
+ $('auth-password').autocomplete=mode==='login'?'current-password':'new-password';
+ $('auth-forgot').classList.toggle('hidden',mode!=='login');$('auth-message').classList.add('hidden');
+}
+async function bootstrapAuth(){
+ initAccountForms();if(!api){showAuthPane('panel');authNotice('auth-message','Supabase could not load. Check your internet connection and reload.',true);return}
+ api.auth.onAuthStateChange((event,session)=>{
+   if(event==='PASSWORD_RECOVERY'){recoveryRequested=true;authEpoch++;activeUser=session?.user||null;showAuthPane('recovery');return}
+   if(event==='SIGNED_OUT'&&!offlineMode){signedOut();return}
+   // Bootstrapping getSession below avoids sign-in events racing with initial load.
+ });
+ try{const {data,error}=await api.auth.getSession();if(error)throw error;
+   if(recoveryRequested)return;
+   if(data.session)await loadAccount(data.session);else signedOut();
+ }catch(err){showAuthPane('panel');authNotice('auth-message','Unable to connect to authentication. Check your internet connection.',true)}
+}
+
 let toastTimer;function toast(msg){const t=$('toast');t.textContent=msg;t.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.add('hidden'),3000)}
 function totals(){return state.transactions.reduce((a,t)=>{a[t.kind==='income'?'income':'expense']+=t.amount;return a},{income:0,expense:0})}
 function tracked(){const {income,expense}=totals();return round(state.balanceStart+income-expense)}
@@ -240,7 +520,7 @@ function renderDailyBrief(safe){
     add('↕',`${recent.length} transaction${recent.length===1?'':'s'} recorded today`,`Money in: ${fmt(inc)} · Money out: ${fmt(out)}. Add anything missing.`);
   }else add('＋','No transactions recorded today','If you spent or received money, add it in Activity to keep your records current.');
   box.innerHTML=items.slice(0,4).join('');
-  const snapshotKey='pocket-v6-daily-snapshot';
+  const snapshotKey='pocket-v6-daily-snapshot-'+(activeUser?.id||'offline');
   const snapshot={date:today,extra:safe.ready?safe.extra:null,transactions:state.transactions.length};
   try{
     const old=JSON.parse(localStorage.getItem(snapshotKey)||'null');
@@ -310,7 +590,7 @@ $('tx-desc').addEventListener('input',()=>{if(!manualCategory&&$('tx-kind').valu
 $('tx-form').addEventListener('submit',e=>{e.preventDefault();const amount=val($('tx-amount').value),description=$('tx-desc').value.trim(),date=$('tx-date').value,kind=$('tx-kind').value,category=$('tx-cat').value,id=$('tx-edit-id').value;if(!description||amount===null||amount<=0||amount>1e7||!asUTC(date))return alert('Enter a valid description, date and positive amount.');const t={id:id||idNew(),description:description.slice(0,80),amount:round(amount),date,kind,category:cats.includes(category)?category:'Other'};if(id){const i=state.transactions.findIndex(t=>t.id===id);if(i>=0)state.transactions[i]=t;else state.transactions.unshift(t)}else state.transactions.unshift(t);persist();resetTx();render();toast(id?'Entry updated':'Entry saved')});$('tx-cancel').addEventListener('click',resetTx);$('tx-more').addEventListener('click',()=>{shownTx+=50;renderMoney()});
 $('budget-cat').addEventListener('change',()=>{const c=$('budget-cat').value;$('budget-essential').checked=essential(c);$('budget-limit').value=state.budgets[c]?.limit??''});$('budget-form').addEventListener('submit',e=>{e.preventDefault();const cat=$('budget-cat').value,limit=val($('budget-limit').value);if(!cats.includes(cat)||limit===null||limit<=0||limit>1e7)return alert('Enter a valid monthly limit.');state.budgets[cat]={limit:round(limit),essential:$('budget-essential').checked};persist();render();toast('Monthly limit saved')});
 $('bill-form').addEventListener('submit',e=>{e.preventDefault();const id=$('bill-id').value,amount=val($('bill-amount').value),saved=val($('bill-saved').value)??0,name=$('bill-name').value.trim(),date=$('bill-date').value,repeat=$('bill-repeat').value;if(!name||!asUTC(date)||amount===null||amount<=0||amount>1e7||saved<0||saved>amount)return alert('Check the bill name, date, amount and money already set aside.');const b={id:id||idNew(),name:name.slice(0,70),date,amount:round(amount),saved:round(saved),repeat,included:$('bill-included').checked};if(id){let i=state.bills.findIndex(x=>x.id===id);if(i>=0)state.bills[i]=b;else state.bills.push(b)}else state.bills.push(b);persist();resetBill();render();toast(id?'Bill updated':'Bill saved')});$('bill-cancel').addEventListener('click',resetBill);
-$('pay-frequency').addEventListener('change',payHelp);$('setup-form').addEventListener('submit',e=>{e.preventDefault();const map={cash:'plan-cash',income:'plan-income',essentials:'plan-essentials',flexible:'plan-flexible',weekly:'plan-weekly',emergencyTarget:'plan-emergency-target',emergencySaved:'plan-emergency-saved',debt:'plan-debt',debtApr:'plan-debt-apr'};let p={};for(const [k,id] of Object.entries(map)){p[k]=val($(id).value);if(p[k]!==null&&(p[k]<0||p[k]>(k==='debtApr'?100:1e8)))return alert('Please check the amounts and interest rate you entered.')}const target=val($('goal-target').value),saved=val($('goal-saved').value),name=$('goal-name').value.trim(),next=$('pay-next').value;if(!name||target===null||target<=0||target>1e8||saved===null||saved<0||saved>1e8)return alert('Please check your goal information.');if(next&&!asUTC(next))return alert('Enter a valid payday or leave it blank.');state.planning=p;state.goal={name:name.slice(0,60),target:round(target),saved:round(saved)};state.pay={frequency:$('pay-frequency').value,next};persist();render();$('setup-status').textContent='Saved in this browser.';toast('Your money setup is saved')});
+$('pay-frequency').addEventListener('change',payHelp);$('setup-form').addEventListener('submit',e=>{e.preventDefault();const map={cash:'plan-cash',income:'plan-income',essentials:'plan-essentials',flexible:'plan-flexible',weekly:'plan-weekly',emergencyTarget:'plan-emergency-target',emergencySaved:'plan-emergency-saved',debt:'plan-debt',debtApr:'plan-debt-apr'};let p={};for(const [k,id] of Object.entries(map)){p[k]=val($(id).value);if(p[k]!==null&&(p[k]<0||p[k]>(k==='debtApr'?100:1e8)))return alert('Please check the amounts and interest rate you entered.')}const target=val($('goal-target').value),saved=val($('goal-saved').value),name=$('goal-name').value.trim(),next=$('pay-next').value;if(!name||target===null||target<=0||target>1e8||saved===null||saved<0||saved>1e8)return alert('Please check your goal information.');if(next&&!asUTC(next))return alert('Enter a valid payday or leave it blank.');state.planning=p;state.goal={name:name.slice(0,60),target:round(target),saved:round(saved)};state.pay={frequency:$('pay-frequency').value,next};persist();render();$('setup-status').textContent='Saved locally; cloud status appears at the top.';toast('Your money setup is saved')});
 $('purchase-form').addEventListener('submit',e=>{e.preventDefault();const price=val($('purchase-amount').value),days=Number($('purchase-days').value);if(price===null||price<=0||price>1e7)return;lastPurchase=price;$('purchase-result').innerHTML=purchaseHTML(purchaseCalc(price,days),$('purchase-name').value)});
 $('recovery-mode').addEventListener('change',()=>{$('recovery-amount-wrap').classList.toggle('hidden',$('recovery-mode').value==='recorded')});$('recovery-form').addEventListener('submit',e=>{e.preventDefault();const mode=$('recovery-mode').value,amount=val($('recovery-amount').value)||0;if(mode==='new'&&(amount<=0||amount>1e7))return alert('Enter a positive unrecorded extra cost.');$('recovery-result').innerHTML=recoveryHTML(recoveryCalc(mode,amount,Number($('recovery-weeks').value)))});
 $('extra-form').addEventListener('submit',e=>{e.preventDefault();const amount=val($('extra-amount').value);if(amount===null||amount<=0||amount>1e7)return;$('extra-result').innerHTML=extraHTML(extraCalc(amount))});$('pattern-run').addEventListener('click',()=>{$('pattern-result').innerHTML=patternResult()});$('pattern-cut').addEventListener('change',()=>{$('pattern-result').innerHTML=patternResult()});
@@ -323,12 +603,12 @@ if('deleteBudget' in b.dataset){if(confirm('Remove this category limit?')){delet
 if('editBill' in b.dataset){const x=state.bills.find(t=>t.id===b.dataset.editBill);if(!x)return;openTool('bills');$('bill-id').value=x.id;$('bill-name').value=x.name;$('bill-amount').value=x.amount;$('bill-date').value=x.date;$('bill-saved').value=x.saved;$('bill-repeat').value=x.repeat;$('bill-included').checked=x.included;$('bill-title').textContent='Edit this bill';$('bill-submit').textContent='Update bill';$('bill-cancel').classList.remove('hidden');$('bill-name').focus();return}
 if('deleteBill' in b.dataset){if(confirm('Remove this bill plan?')){state.bills=state.bills.filter(x=>x.id!==b.dataset.deleteBill);persist();render();toast('Bill removed')}}})}
 function ask(q){if(!q.trim())return;const area=$('chat-log'),user=document.createElement('div'),answer=document.createElement('div');user.className='chat-message user';answer.className='chat-message pocket';user.textContent=q.trim();try{answer.textContent=coachAnswer(q)}catch(e){console.error(e);answer.textContent='I couldn’t calculate that. Try rephrasing your question.'}area.append(user,answer);$('chat-input').value='';area.scrollTop=area.scrollHeight}
-function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='pocket-v4-backup-'+now()+'.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Backup downloaded — keep it private')}
-async function importData(e){const file=e.target.files?.[0];if(!file)return;try{if(file.size>15_000_000)throw Error('File is too large');const data=JSON.parse(await file.text());if(!data||!Array.isArray(data.transactions)||!data.goal)throw Error('Invalid backup');if(!confirm('Restore this backup? It replaces all Pocket data saved in this browser. Make sure you exported a backup of your current data first.'))return;state=normalize(data);if(!persist())return;shownTx=50;fillSetup();resetBill();resetTx();render();toast('Backup restored') }catch(err){alert('That file does not look like a valid Pocket JSON backup. Nothing was changed.')}finally{e.target.value=''}}
-initSelects();attach();render();$('pattern-result').innerHTML=patternResult();
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='pocket-v7-backup-'+now()+'.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Backup downloaded — keep it private')}
+async function importData(e){const file=e.target.files?.[0];if(!file)return;try{if(file.size>15_000_000)throw Error('File is too large');const data=JSON.parse(await file.text());if(!data||!Array.isArray(data.transactions)||!data.goal)throw Error('Invalid backup');if(!confirm('Restore this backup? It replaces all Pocket data saved in this browser. Make sure you exported a backup of your current data first.'))return;state=normalize(data);if(!persist())return;shownTx=50;fillSetup();resetBill();resetTx();render();toast('Backup restored; check cloud sync status') }catch(err){alert('That file does not look like a valid Pocket JSON backup. Nothing was changed.')}finally{e.target.value=''}}
+initSelects();attach();render();$('pattern-result').innerHTML=patternResult();bootstrapAuth();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
 // Optional test seam, only exposed when launched with ?test=1 (never used to alter user data).
-if(new URLSearchParams(location.search).has('test'))window.PocketTest={normalize,scenario,addMonthsAnchor,nextBills,safeToSpend,cashCalendar,recoveryCalc,patternData,extraCalc,coachAnswer,getState:()=>state,setState:s=>{state=normalize(s);render()}};
+
 })();
 
 </script></body>
